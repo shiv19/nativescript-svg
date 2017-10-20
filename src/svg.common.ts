@@ -1,4 +1,4 @@
-import { View, Property } from "tns-core-modules/ui/core/view";
+import { View, Property } from "tns-core-modules/ui/core/view/view";
 import * as utils from "tns-core-modules/utils/utils";
 import * as types from "tns-core-modules/utils/types"
 

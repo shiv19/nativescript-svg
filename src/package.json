@@ -11,11 +11,12 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "demo.ios": "npm run preparedemo ; cd demo ; tns emulate ios",
-    "demo.android": "npm run preparedemo ; cd demo ; tns run android",
-    "preparedemo": "npm run build ; cd demo ; tns plugin remove nativescript-svg ; tns plugin add .. ; tns install",
-    "setup": "cd demo ; npm install ; cd .. ; npm run build ; cd demo ; tns plugin add .. ; cd .."
+    "build": "tsc -noStrictGenericChecks  -skipLibCheck",
+    "demo.ios": "npm run preparedemoios ; cd ../demo ; tns emulate ios; cd ../src",
+    "demo.android": "npm run preparedemoandroid ; cd ../demo ; tns run android; cd ../src",
+    "preparedemoios": "npm run build ; cd ../demo ; tns plugin remove nativescript-svg ; tns plugin add ../src/ ; tns platform add ios ; cd ../src",
+    "preparedemoandroid": "npm run build ; cd ../demo ; tns plugin remove nativescript-svg ; tns plugin add ../src/ ; tns platform add android ; cd ../src",
+    "setup": "cd ../demo ; npm install ; cd ../src ; npm run build ; cd ../demo ; tns plugin add ../src ; cd ../src"
   },
   "repository": {
     "type": "git",

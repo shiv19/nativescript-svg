@@ -5,15 +5,15 @@
   "repository": "<fill-your-repository-here>",
   "nativescript": {
     "id": "org.nativescript.demo3",
-    "tns-android": {
-      "version": "3.0.0"
-    },
     "tns-ios": {
-      "version": "3.0.0"
+      "version": "3.1.0"
+    },
+    "tns-android": {
+      "version": "3.2.0"
     }
   },
   "dependencies": {
-    "nativescript-svg": "../src/",
+    "nativescript-svg": "file:///E:\\Work\\NPlugins\\nativescript-svg\\src",
     "tns-core-modules": "^3.0.0"
   },
   "devDependencies": {

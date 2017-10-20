@@ -1,7 +1,7 @@
 import svg = require("./svg");
 import common = require("./svg.common");
 import types = require("tns-core-modules/utils/types");
-import fs = require("tns-core-modules/file-system");
+import fs = require("tns-core-modules/file-system/file-system");
 
 global.moduleMerge(common, exports);
 declare var SVGKImage: any;

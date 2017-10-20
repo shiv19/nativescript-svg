@@ -2,8 +2,8 @@ import svg = require("./svg");
 import common = require("./svg.common");
 import types = require("tns-core-modules/utils/types");
 import * as utilsModule from "tns-core-modules/utils/utils";
-import * as fileSystemModule from "tns-core-modules/file-system";
-import * as httpModule from "tns-core-modules/http";
+import * as fileSystemModule from "tns-core-modules/file-system/file-system";
+import * as httpModule from "tns-core-modules/http/http";
 
 var http: typeof httpModule;
 function ensureHttp() {

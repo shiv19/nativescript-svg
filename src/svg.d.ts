@@ -2,8 +2,8 @@
  * Allows you to parse SVG files.
  */
 
-    import { Property } from "tns-core-modules/ui/core/dependency-observable";
-    import { View } from "tns-core-modules/ui/core/view";
+    import { Property } from "tns-core-modules/ui/core/dependency-observable/dependency-observable";
+    import { View } from "tns-core-modules/ui/core/view/view";
 
     /**
      * Represents a class that provides functionality for loading svg(s).
